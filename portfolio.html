@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">My<span>Portfolio</span></a>
+
+        <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>Raki Hudson Masiddo!</span></h1>
+            <h2>Student | Web Developer | Designer</h2>
+            <p>
+                Welcome to my personal portfolio website.
+                I enjoy learning HTML, CSS, JavaScript,
+                and creating beautiful websites.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <!-- Put profile.jpg in the same folder as index.html -->
+            <img src="images.jpg.jpg"
+                 alt="My profile picture"
+                 class="profile-img">
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about-content">
+            <p>
+                Hi! My name is Raki Hudson. I am a student who is
+                interested in web development and computer technology.
+                I am learning how to build websites using HTML,
+                CSS, and JavaScript. My goal is to improve my coding
+                skills and create useful and creative projects.
+            </p>
+        </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Creating the structure of web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Designing colorful and responsive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Adding interactive features to websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Computer Basics</h3>
+                <p>Learning computer applications and technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="card-container">
+            <div class="card project-card">
+                <div class="project-icon">🌐</div>
+                <h3>Personal Portfolio</h3>
+                <p>A website that introduces me and my skills.</p>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-icon">📋</div>
+                <h3>HTML Table</h3>
+                <p>A webpage using HTML tables and attributes.</p>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-icon">💻</div>
+                <h3>C++ Student System</h3>
+                <p>A console program for managing student records.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p>Thank you for visiting my portfolio!</p>
+
+        <form id="contactForm">
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <textarea id="message"
+                      placeholder="Your Message"
+                      rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="formMessage" role="status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Raki Hudson Masiddo |
+            My Personal Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
